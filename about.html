@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre Paderteg Kabeltechnik SRL | Asamblare Cabluri | Copșa Mică, Sibiu</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Despre Paderteg Kabeltechnik SRL - Companie românească specializată în tehnologia cablurilor și asamblare cabluri din Copșa Mică, Sibiu. Calitate superioară din 2004.">
+    <meta name="keywords" content="despre paderteg, kabeltechnik romania, istorie companie, asamblare cabluri copșa mică, tehnologia cablurilor sibiu, certificări iso, servicii industriale">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Despre Paderteg Kabeltechnik SRL | Asamblare Cabluri România">
+    <meta property="og:description" content="Aflați despre Paderteg Kabeltechnik SRL - companie românească cu experiență în tehnologia cablurilor din Copșa Mică, Sibiu.">
+    <meta property="og:image" content="images/since_20004.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Despre Paderteg Kabeltechnik SRL">
+    <meta name="twitter:description" content="Companie românească specializată în tehnologia cablurilor din Copșa Mică, Sibiu.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .fade-in-section.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Hero section fade-in animation */
+        .fade-in-hero {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInHero 1.5s ease-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes fadeInHero {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Enhanced text shadow for better readability */
+        .fade-in-hero h1,
+        .fade-in-hero h2,
+        .fade-in-hero div {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive typography adjustments */
+        @media (max-width: 768px) {
+            .fade-in-hero h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            .fade-in-hero h2 {
+                font-size: 1.25rem;
+            }
+            
+            .fade-in-hero div {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .fade-in-hero h1 {
+                font-size: 3.5rem;
+            }
+            
+            .fade-in-hero h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+        <!-- Navigation -->
+        <nav x-data="{ open: false, megaMenu: null }" @click.outside="megaMenu = null" class="bg-white backdrop-blur-md bg-opacity-90 border-b border-gray-100 fixed w-full top-0 z-[100]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <!-- Logo -->
+                        <div class="flex-shrink-0 flex items-center">
+                            <a href="index.html">
+                                <img src="images/logo.jpeg" alt="Paderteg Logo" class="h-8 w-auto">
+                            </a>
+                        </div>
+
+                        <!-- Desktop Navigation Links -->
+                        <div class="hidden sm:ml-10 sm:flex sm:space-x-8">
+                            <a href="index.html" class="border-transparent text-gray-500 hover:text-gray-900 h-16 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors duration-200">
+                                Home
+                            </a>
+
+                            <a href="about.html" class="border-blue-500 text-blue-600 h-16 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors duration-200">
+                                About
+                            </a>
+
+                            <!-- Products Dropdown -->
+                            <div class="relative h-16 inline-flex items-center">
+                                <button @mouseover="megaMenu = 'products'" @focus="megaMenu = 'products'" @click="megaMenu = megaMenu === 'products' ? null : 'products'" class="border-transparent text-gray-500 hover:text-gray-900 h-16 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors duration-200">
+                                    Products
+                                    <svg class="ml-1 h-5 w-5 transition-transform duration-200" :class="{'rotate-180': megaMenu === 'products'}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Resources Dropdown -->
+                            <div class="relative h-16 inline-flex items-center">
+                                <button @mouseover="megaMenu = 'resources'" @focus="megaMenu = 'resources'" @click="megaMenu = megaMenu === 'resources' ? null : 'resources'" class="border-transparent text-gray-500 hover:text-gray-900 h-16 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors duration-200">
+                                    Resources
+                                    <svg class="ml-1 h-5 w-5 transition-transform duration-200" :class="{'rotate-180': megaMenu === 'resources'}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <a href="contact.html" class="border-transparent text-gray-500 hover:text-gray-900 h-16 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors duration-200">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Language Switcher and Mobile Menu -->
+                    <div class="flex items-center">
+                        <!-- Mobile menu button -->
+                        <div class="ml-4 sm:hidden">
+                            <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition duration-150 ease-in-out z-50">
+                                <svg class="h-6 w-6" :class="{'hidden': open, 'block': !open}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                                <svg class="h-6 w-6" :class="{'block': open, 'hidden': !open}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div x-show="open"
+                 x-transition:enter="transition ease-out duration-200"
+                 x-transition:enter-start="opacity-0 -translate-y-1"
+                 x-transition:enter-end="opacity-100 translate-y-0"
+                 x-transition:leave="transition ease-in duration-150"
+                 x-transition:leave-start="opacity-100 translate-y-0"
+                 x-transition:leave-end="opacity-0 -translate-y-1"
+                 class="sm:hidden"
+                 style="display: none;">
+                <div class="pt-2 pb-3 space-y-1 bg-white shadow-lg rounded-b-xl">
+                    <a href="index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors duration-200">
+                        Home
+                    </a>
+
+                    <a href="about.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors duration-200">
+                        About
+                    </a>
+
+                    <!-- Mobile Products Dropdown -->
+                    <div x-data="{ open: false }">
+                        <button @click="open = !open" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900 w-full flex justify-between items-center pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors duration-200">
+                            Products
+                            <svg class="h-5 w-5 transition-transform duration-200" :class="{'rotate-180': open}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open"
+                             x-transition:enter="transition ease-out duration-200"
+                             x-transition:enter-start="opacity-0 scale-95"
+                             x-transition:enter-end="opacity-100 scale-100"
+                             x-transition:leave="transition ease-in duration-150"
+                             x-transition:leave-start="opacity-100 scale-100"
+                             x-transition:leave-end="opacity-0 scale-95"
+                             class="pl-4 bg-gray-50 space-y-1 py-2"
+                             style="display: none;">
+                            <a href="products.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200">
+                                All Products
+                            </a>
+                            <a href="automotive.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200">
+                                Automotive
+                            </a>
+                            <a href="industrial.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200">
+                                Industrial
+                            </a>
+                            <a href="healthcare.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200">
+                                Health Care
+                            </a>
+                            <a href="energy-environmental.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200">
+                                Energy & Environmental
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Resources Dropdown -->
+                    <div x-data="{ open: false }">
+                        <button @click="open = !open" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900 w-full flex justify-between items-center pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors duration-200">
+                            Resources
+                            <svg class="h-5 w-5 transition-transform duration-200" :class="{'rotate-180': open}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open"
+                             x-transition:enter="transition ease-out duration-200"
+                             x-transition:enter-start="opacity-0 scale-95"
+                             x-transition:enter-end="opacity-100 scale-100"
+                             x-transition:leave="transition ease-in duration-150"
+                             x-transition:leave-start="opacity-100 scale-100"
+                             x-transition:leave-end="opacity-0 scale-95"
+                             class="pl-4 bg-gray-50 space-y-1 py-2"
+                             style="display: none;">
+                            <a href="certificates.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200">
+                                Certificates
+                            </a>
+                            <a href="machines.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200">
+                                Machines
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors duration-200">
+                        Contact
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mega Menu Dropdown for Products -->
+            <div x-show="megaMenu === 'products'"
+                 @click.away="megaMenu = null"
+                 @mouseleave="megaMenu = null"
+                 x-transition:enter="transition ease-out duration-200"
+                 x-transition:enter-start="opacity-0 -translate-y-1"
+                 x-transition:enter-end="opacity-100 translate-y-0"
+                 x-transition:leave="transition ease-in duration-150"
+                 x-transition:leave-start="opacity-100 translate-y-0"
+                 x-transition:leave-end="opacity-0 -translate-y-1"
+                 class="absolute top-16 inset-x-0 transform shadow-lg bg-white"
+                 style="display: none;">
+                <div class="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
+                    <!-- All Products Section -->
+                    <a href="products.html" class="group -m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900">
+                                All Products
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-500">
+                                Browse our complete catalog of high-quality cable solutions.
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <span class="inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-800">
+                                View All Products
+                                <svg class="ml-1 h-4 w-4 text-blue-600 group-hover:text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Automotive Section -->
+                    <a href="automotive.html" class="group -m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900">
+                                Automotive
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-500">
+                                Precision cable solutions for automotive applications and vehicle systems.
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <span class="inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-800">
+                                View Products
+                                <svg class="ml-1 h-4 w-4 text-blue-600 group-hover:text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Industrial Section -->
+                    <a href="industrial.html" class="group -m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900">
+                                Industrial
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-500">
+                                Robust cabling solutions for industrial machinery and manufacturing equipment.
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <span class="inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-800">
+                                View Products
+                                <svg class="ml-1 h-4 w-4 text-blue-600 group-hover:text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Health Care Section -->
+                    <a href="healthcare.html" class="group -m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900">
+                                Health Care
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-500">
+                                Specialized medical-grade cabling for healthcare devices and equipment.
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <span class="inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-800">
+                                View Products
+                                <svg class="ml-1 h-4 w-4 text-blue-600 group-hover:text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Energy & Environmental Section -->
+                    <a href="energy-environmental.html" class="group -m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900">
+                                Energy & Environmental
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-500">
+                                Solutions for renewable energy systems and environmental monitoring equipment.
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <span class="inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-800">
+                                View Products
+                                <svg class="ml-1 h-4 w-4 text-blue-600 group-hover:text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-gray-50">
+                    <div class="max-w-7xl mx-auto space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
+                        <div class="flow-root">
+                            <a href="products.html" class="group -m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100 transition ease-in-out duration-150">
+                                <svg class="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="ml-3">Featured Products</span>
+                            </a>
+                        </div>
+                        <div class="flow-root">
+                            <a href="contact.html" class="group -m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100 transition ease-in-out duration-150">
+                                <svg class="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <span class="ml-3">Request Custom Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mega Menu Dropdown for Resources -->
+            <div x-show="megaMenu === 'resources'"
+                 @click.away="megaMenu = null" 
+                 @mouseleave="megaMenu = null"
+                 x-transition:enter="transition ease-out duration-200"
+                 x-transition:enter-start="opacity-0 -translate-y-1"
+                 x-transition:enter-end="opacity-100 translate-y-0"
+                 x-transition:leave="transition ease-in duration-150"
+                 x-transition:leave-start="opacity-100 translate-y-0"
+                 x-transition:leave-end="opacity-0 -translate-y-1"
+                 class="absolute top-16 inset-x-0 transform shadow-lg bg-white"
+                 style="display: none;">
+                <div class="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-2 lg:px-8 lg:py-12 xl:py-16">
+                    <!-- Certificates Section -->
+                    <a href="certificates.html" class="group -m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900">
+                                Certificates
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-500">
+                                View our quality certifications and compliance documentation.
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <span class="inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-800">
+                                View Certificates
+                                <svg class="ml-1 h-4 w-4 text-blue-600 group-hover:text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Machines Section -->
+                    <a href="machines.html" class="group -m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900">
+                                Machines
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-500">
+                                Explore our state-of-the-art manufacturing equipment.
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <span class="inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-800">
+                                View Machines
+                                <svg class="ml-1 h-4 w-4 text-blue-600 group-hover:text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-gray-50">
+                    <div class="max-w-7xl mx-auto space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
+                        <div class="flow-root">
+                            <a href="about.html" class="group -m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100 transition ease-in-out duration-150">
+                                <svg class="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>
+                                <span class="ml-3">About Our Company</span>
+                            </a>
+                        </div>
+                        <div class="flow-root">
+                            <a href="contact.html" class="group -m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100 transition ease-in-out duration-150">
+                                <svg class="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <span class="ml-3">Contact Us</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="flex-1 pt-16">
+            <div class="w-full">
+                <!-- Hero Section -->
+    <section class="relative h-[70vh] min-h-[500px] w-full flex flex-col justify-center items-center p-6 text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="images/about-page-header-section.png" 
+                 alt="About Paderteg - Header Background" 
+                 class="w-full h-full object-cover">
+            <!-- Gray Overlay -->
+            <div class="absolute inset-0 bg-gray-900/60"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="text-center space-y-4 fade-in-hero relative z-10">
+            <!-- Main Heading -->
+            <h1 class="text-3xl lg:text-5xl font-bold text-white mb-6">
+                Paderteg Kabeltechnik
+            </h1>
+            
+            <!-- Subheading -->
+            <h2 class="text-xl lg:text-2xl font-normal text-white mb-8">
+                Excellence in Cable Assembly Solutions
+            </h2>
+            
+            <!-- Attribute List -->
+            <div class="text-lg text-white mb-12">
+                <span>Precision</span>
+                <span class="mx-2">•</span>
+                <span>Quality</span>
+                <span class="mx-2">•</span>
+                <span>Reliability</span>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white z-10">
+            <span class="text-sm mb-2">Scroll Down</span>
+            <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section id="company-overview" class="py-16 sm:py-24 bg-white">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="max-w-full mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center">Our Company</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Founded in 2004, Paderteg has established itself as a leading manufacturer of high-quality cable assemblies and wiring harnesses. With our headquarters in Romania and operations in multiple European countries, we serve clients across various industries including automotive, medical, industrial, and renewable energy sectors.
+                        </p>
+                        <p class="text-lg text-gray-700">
+                            Our ISO 9001:2015 and IATF16949:2016 certified manufacturing facilities are equipped with advanced technologies and staffed by experienced professionals committed to excellence which ensure that every product leaving our lines reflects superior quality, traceability, and consistency.
+                        </p>
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="images/since_20004.png" alt="Paderteg Kabeltechnik SRL - Facilitățile companiei din Copșa Mică, Sibiu - Tehnologia cablurilor din 2004" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission and Vision -->
+    <section class="py-16 sm:py-24 bg-gray-50">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="max-w-full mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Mission -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Our Mission</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            To deliver innovative, high-quality cable assembly solutions that exceed customer expectations, while maintaining the highest standards of service, integrity, and technical excellence. We strive to be the preferred partner for companies seeking reliable connection solutions across diverse industries.
+                        </p>
+                    </div>
+
+                    <!-- Vision -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Our Vision</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            To be recognized globally as a leader in cable assembly solutions, setting industry standards for quality, innovation, and customer satisfaction. We aim to continuously expand our capabilities and market presence while maintaining our commitment to sustainability and ethical business practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 sm:py-32 bg-blue-900 text-white">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="max-w-full mx-auto text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Work With Us?</h2>
+                <p class="text-xl text-blue-100 mb-12 max-w-full mx-auto">
+                    Partner with Paderteg for high-quality cable assembly solutions tailored to your specific requirements.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="contact.html" class="bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-lg font-medium">
+                        Contact Us
+                    </a>
+                    <a href="products.html" class="bg-transparent border border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-medium transition-colors">
+                        Explore Our Products
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-24 bg-white scroll-mt-16" id="values-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Our Principles</span>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Core Values</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    The principles that guide our business and relationships with customers, partners, and employees.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Quality -->
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 fade-in-section">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Quality</h3>
+                    <p class="text-gray-600">
+                        We are committed to excellence in everything we do, ensuring our products meet or exceed the highest standards of performance and reliability.
+                    </p>
+                </div>
+
+                <!-- Innovation -->
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 fade-in-section">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Innovation</h3>
+                    <p class="text-gray-600">
+                        We embrace new ideas and technologies to stay at the forefront of our industry and provide cutting-edge solutions for complex challenges.
+                    </p>
+                </div>
+
+                <!-- Integrity -->
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 fade-in-section">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Integrity</h3>
+                    <p class="text-gray-600">
+                        We conduct our business with honesty, transparency, and ethical standards, building trust with our customers, partners, and employees.
+                    </p>
+                </div>
+
+                <!-- Customer Focus -->
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 fade-in-section">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Customer Focus</h3>
+                    <p class="text-gray-600">
+                        We strive to understand and exceed our customers' expectations, building long-lasting relationships based on mutual success and satisfaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="py-24 bg-gray-50 scroll-mt-16" id="what-we-do-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Our Expertise</span>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">What We Do</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We specialize in creating high-quality cable assemblies and system technology solutions tailored to our clients' specific requirements.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group fade-in-section">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img
+                            src="images/custom_cable_assemblies.png"
+                            alt="Custom Cable Assemblies"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                        >
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Custom Cable Assemblies</h3>
+                        <p class="text-gray-600 mb-4">
+                            We design and manufacture bespoke cable assemblies tailored to meet the specific requirements of various applications and industries.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group fade-in-section">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img
+                            src="images/wire_harnesses.png"
+                            alt="Wire Harnesses"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                        >
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Wire Harnesses</h3>
+                        <p class="text-gray-600 mb-4">
+                            Our wire harnesses are engineered to provide reliable connectivity and efficient organization of electrical systems for various applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group fade-in-section">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img
+                            src="images/system_integration.png"
+                            alt="System Integration"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                        >
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">System Integration</h3>
+                        <p class="text-gray-600 mb-4">
+                            We provide comprehensive system integration solutions, ensuring seamless connectivity and optimal performance across your entire setup.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-white scroll-mt-16" id="why-choose-us-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Our Advantages</span>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Why Choose Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover the key advantages that make Paderteg the trusted partner for cable assembly solutions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 fade-in-section">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Certified Quality</h3>
+                    <p class="text-gray-600">
+                        Our ISO 9001:2015 and IATF 16949 certifications reflect our commitment to maintaining the highest quality standards in every product we deliver.
+                    </p>
+                </div>
+
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 fade-in-section">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Custom Solutions</h3>
+                    <p class="text-gray-600">
+                        We specialize in creating tailored cable solutions designed to meet your specific requirements, ensuring optimal performance for your unique applications.
+                    </p>
+                </div>
+
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 fade-in-section">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Fast Turnaround</h3>
+                    <p class="text-gray-600">
+                        Our efficient production processes and dedicated team enable us to deliver your orders promptly without compromising on quality.
+                    </p>
+                </div>
+
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 fade-in-section">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">State-of-the-Art Facilities</h3>
+                    <p class="text-gray-600">
+                        Our modern manufacturing facilities in Romania are equipped with the latest technology and machinery to ensure precision and efficiency in production.
+                    </p>
+                </div>
+
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 fade-in-section">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Expert Team</h3>
+                    <p class="text-gray-600">
+                        Our skilled engineers and technicians bring years of experience and expertise to every project, ensuring the highest quality in design and manufacturing.
+                    </p>
+                </div>
+
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 fade-in-section">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Global Partnership</h3>
+                    <p class="text-gray-600">
+                        Through strategic global partnerships, we bring together organizations, innovators, and communities from around the world to drive progress, share knowledge, and achieve common goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-24 bg-gray-50 scroll-mt-16" id="certifications-section" x-data="{ activeTab: 'all', showModal: false, currentCertificate: null }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Quality Assurance</span>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Certifications</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our commitment to quality is validated by industry-leading certifications that ensure we meet the highest standards.
+                </p>
+            </div>
+
+            <!-- Location Filter Tabs -->
+            <div class="flex justify-center mb-12">
+                <div class="inline-flex rounded-lg border border-gray-200 bg-white p-1">
+                    <button
+                        @click="activeTab = 'all'"
+                        :class="activeTab === 'all' ? 'bg-blue-600 text-white' : 'text-gray-500 hover:text-gray-700'"
+                        class="px-4 py-2 text-sm font-medium rounded-md transition-colors duration-200"
+                    >
+                        All Locations
+                    </button>
+                    <button
+                        @click="activeTab = 'axente'"
+                        :class="activeTab === 'axente' ? 'bg-blue-600 text-white' : 'text-gray-500 hover:text-gray-700'"
+                        class="px-4 py-2 text-sm font-medium rounded-md transition-colors duration-200"
+                    >
+                        Axente Sever
+                    </button>
+                    <button
+                        @click="activeTab = 'copsa'"
+                        :class="activeTab === 'copsa' ? 'bg-blue-600 text-white' : 'text-gray-500 hover:text-gray-700'"
+                        class="px-4 py-2 text-sm font-medium rounded-md transition-colors duration-200"
+                    >
+                        Copșa Mică
+                    </button>
+                </div>
+            </div>
+
+            <div class="space-y-12 fade-in-section">
+                <!-- Axente Sever Certificates -->
+                <div x-show="activeTab === 'all' || activeTab === 'axente'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform translate-y-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Axente Sever Location</h3>
+                    <div class="flex flex-wrap justify-center items-center gap-12">
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                             @click="showModal = true; currentCertificate = {
+                                title: 'ISO 9001:2015',
+                                image: 'images/axente_sever_9001.png',
+                                description: 'Quality Management System certification ensuring consistent quality in all our processes.',
+                                validUntil: '31.12.2025'
+                             }">
+                            <img src="images/axente_sever_9001.png" alt="ISO 9001" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
+                            <p class="text-gray-700 font-medium">ISO 9001:2015</p>
+                            <p class="text-gray-600 text-sm mt-2">Quality Management System</p>
+                        </div>
+
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                             @click="showModal = true; currentCertificate = {
+                                title: 'IATF 16949:2016',
+                                image: 'images/axente_sever_IATF_16949.png',
+                                description: 'Automotive Quality Management System certification for automotive production and service parts.',
+                                validUntil: '15.09.2024'
+                             }">
+                            <img src="images/axente_sever_IATF_16949.png" alt="IATF 16949" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
+                            <p class="text-gray-700 font-medium">IATF 16949:2016</p>
+                            <p class="text-gray-600 text-sm mt-2">Automotive Quality Management</p>
+                        </div>
+
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                             @click="showModal = true; currentCertificate = {
+                                title: 'ISO 45001:2018',
+                                image: 'images/copsa_mica_iso_45001.png',
+                                description: 'Occupational Health and Safety Management System certification ensuring workplace safety.',
+                                validUntil: '19.09.2025'
+                             }">
+                            <img src="images/copsa_mica_iso_45001.png" alt="ISO 45001" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
+                            <p class="text-gray-700 font-medium">ISO 45001:2018</p>
+                            <p class="text-gray-600 text-sm mt-2">Occupational Health & Safety</p>
+                        </div>
+
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                             @click="showModal = true; currentCertificate = {
+                                title: 'ISO 14001:2015',
+                                image: 'images/copsa_mica_iso_14001.png',
+                                description: 'Environmental Management System certification demonstrating our commitment to environmental responsibility.',
+                                validUntil: '18.08.2027'
+                             }">
+                            <img src="images/copsa_mica_iso_14001.png" alt="ISO 14001" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
+                            <p class="text-gray-700 font-medium">ISO 14001:2015</p>
+                            <p class="text-gray-600 text-sm mt-2">Environmental Management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copsa Mica Certificates -->
+                <div x-show="activeTab === 'all' || activeTab === 'copsa'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform translate-y-4">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Copșa Mică Location</h3>
+                    <div class="flex flex-wrap justify-center items-center gap-8">
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                             @click="showModal = true; currentCertificate = {
+                                title: 'IATF 16949:2016',
+                                image: 'images/copsa_mica_iatf_16949.png',
+                                description: 'Automotive Quality Management System certification for automotive production and service parts.',
+                                validUntil: '20.06.2027'
+                             }">
+                            <img src="images/copsa_mica_iatf_16949.png" alt="IATF 16949" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
+                            <p class="text-gray-700 font-medium">IATF 16949:2016</p>
+                            <p class="text-gray-600 text-sm mt-2">Automotive Quality Management</p>
+                        </div>
+
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                             @click="showModal = true; currentCertificate = {
+                                title: 'ISO 9001:2015',
+                                image: 'images/copsa_mica_iso_9001.png',
+                                description: 'Quality Management System certification ensuring consistent quality in all our processes.',
+                                validUntil: '20.06.2027'
+                             }">
+                            <img src="images/copsa_mica_iso_9001.png" alt="ISO 9001" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
+                            <p class="text-gray-700 font-medium">ISO 9001:2015</p>
+                            <p class="text-gray-600 text-sm mt-2">Quality Management System</p>
+                        </div>
+
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                             @click="showModal = true; currentCertificate = {
+                                title: 'ISO 45001:2018',
+                                image: 'images/copsa_mica_iso_45001.png',
+                                description: 'Occupational Health and Safety Management System certification ensuring workplace safety.',
+                                validUntil: '19.09.2025'
+                             }">
+                            <img src="images/copsa_mica_iso_45001.png" alt="ISO 45001" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
+                            <p class="text-gray-700 font-medium">ISO 45001:2018</p>
+                            <p class="text-gray-600 text-sm mt-2">Occupational Health & Safety</p>
+                        </div>
+
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                             @click="showModal = true; currentCertificate = {
+                                title: 'ISO 14001:2015',
+                                image: 'images/copsa_mica_iso_14001.png',
+                                description: 'Environmental Management System certification demonstrating our commitment to environmental responsibility.',
+                                validUntil: '18.08.2027'
+                             }">
+                            <img src="images/copsa_mica_iso_14001.png" alt="ISO 14001" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
+                            <p class="text-gray-700 font-medium">ISO 14001:2015</p>
+                            <p class="text-gray-600 text-sm mt-2">Environmental Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate Modal -->
+            <div x-show="showModal"
+                 class="fixed inset-0 z-50 overflow-y-auto"
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0"
+                 x-transition:enter-end="opacity-100"
+                 x-transition:leave="transition ease-in duration-200"
+                 x-transition:leave-start="opacity-100"
+                 x-transition:leave-end="opacity-0">
+                <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+                    <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                        <div class="absolute inset-0 bg-gray-500 opacity-75" @click="showModal = false"></div>
+                    </div>
+
+                    <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-5xl sm:w-full"
+                         @click.away="showModal = false">
+                        <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                            <div class="sm:flex sm:items-start">
+                                <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
+                                    <h3 class="text-2xl leading-6 font-semibold text-gray-900 mb-4" x-text="currentCertificate?.title"></h3>
+                                    <div class="mt-4 flex justify-center">
+                                        <img :src="currentCertificate?.image" :alt="currentCertificate?.title" class="max-h-[600px] w-auto object-contain">
+                                    </div>
+                                    <p class="mt-4 text-gray-600" x-text="currentCertificate?.description"></p>
+                                    <p class="mt-2 text-sm text-gray-500">Valid until: <span x-text="currentCertificate?.validUntil"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                            <button type="button"
+                                    class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm"
+                                    @click="showModal = false">
+                                Close
+                            </button>
+                            <a href="#"
+                               class="mt-3 sm:mt-0 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm">
+                                Download Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 fade-in-section">
+                <a href="certificates.html" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors">
+                    View all certifications
+                    <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="py-24 bg-white scroll-mt-16" id="locations-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Our Facilities</span>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Locations</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Strategically located manufacturing facilities to serve our clients efficiently.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 fade-in-section">
+                <!-- Axente Sever -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div class="aspect-w-16 aspect-h-9 relative overflow-hidden">
+                        <iframe
+                            class="w-full h-full"
+                            style="border:0"
+                            loading="lazy"
+                            allowfullscreen
+                            title="Locația Paderteg Kabeltechnik - Axente Sever, Sibiu, România"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Axente+Sever,Romania">
+                        </iframe>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Manufacturing site | Axente Sever</h3>
+                        <div class="space-y-4 text-gray-600">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-600 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                                <p>Over 1,000 m² production area, warehouse & offices</p>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-600 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                </svg>
+                                <p>Expansion up to 30,000 m²</p>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-600 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <p>Axente Sever, Romania</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copsa Mica -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div class="aspect-w-16 aspect-h-9 relative overflow-hidden">
+                        <iframe
+                            class="w-full h-full"
+                            style="border:0"
+                            loading="lazy"
+                            allowfullscreen
+                            title="Locația Paderteg Kabeltechnik - Copșa Mică, Sibiu, România"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Copsa+Mica,Romania">
+                        </iframe>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Manufacturing site | Copșa Mică</h3>
+                        <div class="space-y-4 text-gray-600">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-600 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                                <p>Over 3,000 m² production area, warehouse & offices</p>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-600 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                                <p>IATF certified production location</p>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-600 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <p>Copșa Mică, Romania</p>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-600 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                </svg>
+                                <p>Extended Manufacturing site: 1,200 m² production area</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            </div>
+        
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white pt-20 pb-10">
+            <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
+                    <!-- Company Info -->
+                    <div class="col-span-1 md:col-span-4">
+                        <div class="text-blue-600 font-bold text-xl flex items-center mb-6">
+                            <span class="text-blue-400">Pader</span><span class="text-blue-500">teg</span>
+                        </div>
+                        <p class="text-gray-300 mb-4 max-w-md">Innovative cable assembly and system technology solutions for automotive, medical, and industrial applications.</p>
+                        <p class="text-gray-400 italic">Lösungen, die verbinden</p>
+                        
+                        <div class="mt-6 flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <div class="col-span-1 md:col-span-2">
+                        <h3 class="text-lg font-semibold mb-6 text-gray-100">Navigation</h3>
+                        <ul class="space-y-4">
+                            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                            <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+                            <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Product Categories -->
+                    <div class="col-span-1 md:col-span-2">
+                        <h3 class="text-lg font-semibold mb-6 text-gray-100">Products</h3>
+                        <ul class="space-y-4">
+                            <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">All Products</a></li>
+                            <li><a href="automotive.html" class="text-gray-400 hover:text-white transition-colors">Automotive</a></li>
+                            <li><a href="industrial.html" class="text-gray-400 hover:text-white transition-colors">Industrial</a></li>
+                            <li><a href="healthcare.html" class="text-gray-400 hover:text-white transition-colors">Health Care</a></li>
+                            <li><a href="energy-environmental.html" class="text-gray-400 hover:text-white transition-colors">Energy & Environmental</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div class="col-span-1 md:col-span-2">
+                        <h3 class="text-lg font-semibold mb-6 text-gray-100">Resources</h3>
+                        <ul class="space-y-4">
+                            <li><a href="certificates.html" class="text-gray-400 hover:text-white transition-colors">Certificates</a></li>
+                            <li><a href="machines.html" class="text-gray-400 hover:text-white transition-colors">Machines</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-span-1 md:col-span-2">
+                        <h3 class="text-lg font-semibold mb-6 text-gray-100">Contact</h3>
+                        <address class="not-italic text-gray-400 space-y-4">
+                            <p class="flex items-start">
+                                <svg class="w-5 h-5 text-gray-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Aleea Salcâmilor nr. 18, Copșa Mică, Sibiu, 555400, România
+                            </p>
+                            <p class="flex items-start">
+                                <svg class="w-5 h-5 text-gray-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                <a href="tel:+40731375768" class="hover:text-white transition-colors">+40 731 375 768</a>
+                            </p>
+                            <p class="flex items-start">
+                                <svg class="w-5 h-5 text-gray-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <a href="mailto:contact@paderteg.com" class="hover:text-white transition-colors">contact@paderteg.com</a>
+                            </p>
+                        </address>
+                    </div>
+                </div>
+
+                <!-- Bottom Footer -->
+                <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm">&copy; 2025 Paderteg. All rights reserved.</p>
+                    
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-500 text-sm hover:text-gray-400 transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 text-sm hover:text-gray-400 transition-colors">Terms of Service</a>
+                        <a href="#" class="text-gray-500 text-sm hover:text-gray-400 transition-colors">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </main>
+    </div>
+
+    <!-- JavaScript for animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fade-in animations on scroll
+            const fadeElements = document.querySelectorAll('.fade-in-section');
+
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (elementTop < windowHeight * 0.9) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            };
+
+            // Initial check
+            fadeInOnScroll();
+
+            // Check on scroll
+            window.addEventListener('scroll', fadeInOnScroll);
+
+            // Parallax effect for retro grid
+            window.addEventListener('scroll', function() {
+                const scrollY = window.scrollY;
+                const grid = document.querySelector('.retro-grid');
+                if (grid) {
+                    grid.style.transform = `translateY(${scrollY * 0.1}px)`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
